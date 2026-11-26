@@ -32,3 +32,5 @@ Mentions requises par certaines licences de modèles (à reprendre si vous redis
 - Grok 2 : « Powered by xAI ».
 
 Modifications du 26 novembre 2026 : documentation de préparation Achille LLM, fiche du futur modèle et feuille de route ; statut de livraison explicite. Éléments repris du dépôt achille-ia de DYONYSOS.
+
+26 novembre 2026 : ajout du validateur de catalogue, tests et guide de validation.
