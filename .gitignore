@@ -1,0 +1,22 @@
+# Aucun poids de modèle ni binaire dans ce dépôt
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.apk
+*.aab
+*.dmg
+*.exe
+*.msi
+*.AppImage
+*.deb
+*.rpm
+*.zip
+*.tar.*
+*.tgz
+.env
+.env.*
+.DS_Store
+__pycache__/

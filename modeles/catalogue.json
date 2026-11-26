@@ -1,0 +1,1271 @@
+{
+  "schema": "achille-ia/catalogue/1",
+  "mis_a_jour": "2026-11-11",
+  "avertissement": "Informations indicatives, sans valeur de conseil juridique. Seul fait foi le texte officiel de chaque licence, à relire avant tout usage. Aucun poids de modèle n'est distribué par ce dépôt.",
+  "methode_verification": "Licence lue dans les métadonnées officielles Hugging Face de l'éditeur (champ license) et, pour les licences propres, dans le texte officiel publié par l'éditeur ; liens contrôlés (HTTP 200) le 2026-11-11.",
+  "licences": {
+    "apache-2.0": {
+      "nom": "Apache License 2.0",
+      "spdx": "Apache-2.0",
+      "categorie": "libre",
+      "lien": "https://www.apache.org/licenses/LICENSE-2.0",
+      "conditions": "Usage commercial libre. Conserver le texte de licence et les avis (NOTICE), signaler les modifications. Aucune licence de marque."
+    },
+    "mit": {
+      "nom": "MIT License",
+      "spdx": "MIT",
+      "categorie": "libre",
+      "lien": null,
+      "conditions": "Usage commercial libre. Conserver l'avis de copyright et le texte de licence."
+    },
+    "gemma-4-apache": {
+      "nom": "Apache License 2.0 (Gemma 4)",
+      "spdx": "Apache-2.0",
+      "categorie": "libre",
+      "lien": "https://ai.google.dev/gemma/apache_2",
+      "conditions": "Gemma 4 est publié sous Apache 2.0 (page officielle Google). Le nom « Gemma » reste une marque de Google."
+    },
+    "llama3.1": {
+      "nom": "Llama 3.1 Community License Agreement",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://www.llama.com/llama3_1/license/",
+      "usage": "https://www.llama.com/llama3_1/use-policy/",
+      "conditions": "Afficher « Built with Llama » sur le site, l'interface ou la documentation ; fournir une copie de l'accord avec toute redistribution ; nom de tout modèle dérivé commençant par « Llama » ; au-delà de 700 millions d'utilisateurs actifs mensuels, licence à demander à Meta ; respect de la politique d'usage acceptable. Accès au dépôt soumis à acceptation (gated)."
+    },
+    "llama3.2": {
+      "nom": "Llama 3.2 Community License Agreement",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://www.llama.com/llama3_2/license/",
+      "usage": "https://www.llama.com/llama3_2/use-policy/",
+      "conditions": "Mêmes conditions que Llama 3.1 (« Built with Llama », copie de l'accord, seuil de 700 millions d'utilisateurs actifs mensuels, politique d'usage acceptable). ATTENTION : pour les modèles MULTIMODAUX de Llama 3.2 (11B/90B Vision), la politique d'usage acceptable n'accorde pas les droits aux personnes domiciliées ou aux entreprises ayant leur établissement principal dans l'Union européenne (sauf utilisateurs finaux d'un produit qui les intègre). Les modèles texte 1B/3B ne sont pas concernés."
+    },
+    "llama3.3": {
+      "nom": "Llama 3.3 Community License Agreement",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://www.llama.com/llama3_3/license/",
+      "usage": "https://www.llama.com/llama3_3/use-policy/",
+      "conditions": "« Built with Llama » affiché ; copie de l'accord avec toute redistribution ; nom des dérivés commençant par « Llama » ; au-delà de 700 millions d'utilisateurs actifs mensuels, licence à demander à Meta ; politique d'usage acceptable. Accès gated."
+    },
+    "llama4": {
+      "nom": "Llama 4 Community License Agreement",
+      "spdx": null,
+      "categorie": "restreinte-ue",
+      "lien": "https://www.llama.com/llama4/license/",
+      "usage": "https://www.llama.com/llama4/use-policy/",
+      "conditions": "« Built with Llama », copie de l'accord, seuil de 700 millions d'utilisateurs actifs mensuels, politique d'usage acceptable. ATTENTION : Llama 4 est multimodal ; la politique d'usage acceptable n'accorde PAS les droits aux personnes domiciliées ou aux entreprises ayant leur établissement principal dans l'Union européenne (sauf utilisateurs finaux d'un produit qui l'intègre). Une entreprise française ne peut donc pas l'héberger elle-même."
+    },
+    "gemma": {
+      "nom": "Gemma Terms of Use",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://ai.google.dev/gemma/terms",
+      "usage": "https://ai.google.dev/gemma/prohibited_use_policy",
+      "conditions": "Usage commercial permis. Respect de la Gemma Prohibited Use Policy (intégrée par référence) ; toute redistribution transmet ces restrictions et s'accompagne d'un fichier « Notice » : « Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms » ; Google se réserve le droit de restreindre (à distance ou non) un usage contraire. Accès gated sur Hugging Face."
+    },
+    "mrl": {
+      "nom": "Mistral AI Research License (MRL 0.1)",
+      "spdx": null,
+      "categorie": "recherche",
+      "lien": "https://mistral.ai/licenses/MRL-0.1.md",
+      "conditions": "Recherche uniquement : usage personnel, scientifique ou académique, non productif. Tout usage commercial ou en production exige une licence commerciale de Mistral AI."
+    },
+    "mnpl": {
+      "nom": "Mistral AI Non-Production License (MNPL 0.1)",
+      "spdx": null,
+      "categorie": "recherche",
+      "lien": "https://mistral.ai/licences/MNPL-0.1.md",
+      "conditions": "Usage hors production uniquement (tests, recherche, évaluation). Production ou usage commercial : licence commerciale Mistral AI."
+    },
+    "mistral-modified-mit": {
+      "nom": "Modified MIT License (Mistral AI, Devstral 2)",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/main/LICENSE",
+      "conditions": "MIT avec condition : aucun droit si le chiffre d'affaires mensuel consolidé de l'entreprise (ou de l'employeur) dépasse 20 millions de dollars le mois précédent ; au-delà, licence commerciale Mistral AI."
+    },
+    "mistral-ecosystem": {
+      "nom": "Mistral Ecosystem Open-Weight License",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE",
+      "conditions": "MIT modifiée : une entité qui exerce une activité de « Model as a Service » (donner à un tiers un accès d'inférence ou de post-entraînement avec un contrôle réel sur les entrées ou paramètres, par API par exemple) doit signer une licence commerciale avec Mistral avant tout usage commercial. Usage interne libre. Un service d'IA hébergé ouvert au public relève vraisemblablement de ce cas : avis juridique conseillé."
+    },
+    "qwen": {
+      "nom": "Qwen License Agreement",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE",
+      "conditions": "Usage commercial permis ; au-delà de 100 millions d'utilisateurs actifs mensuels, licence à demander à Alibaba Cloud ; mentions d'attribution prévues par le texte."
+    },
+    "qwen-research": {
+      "nom": "Qwen Research License Agreement",
+      "spdx": null,
+      "categorie": "recherche",
+      "lien": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE",
+      "conditions": "Recherche et usage non commercial uniquement ; usage commercial sur autorisation d'Alibaba Cloud."
+    },
+    "qwen-community-1.0": {
+      "nom": "Qwen Community License 1.0",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE",
+      "conditions": "Au-delà de 100 millions d'utilisateurs actifs mensuels ou de 20 millions de dollars de revenu mensuel, afficher le nom du modèle dans l'interface ; une activité de « Model as a Service » ou d'« AI Work Assistant » exige une licence séparée de Qwen avant tout usage commercial (usage interne libre)."
+    },
+    "grok-2": {
+      "nom": "Grok 2 Community License Agreement",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/xai-org/grok-2/blob/main/LICENSE",
+      "conditions": "Usage non commercial et recherche ; usage commercial seulement en respectant la politique d'usage acceptable de xAI ; afficher « Powered by xAI » ; interdiction d'utiliser le modèle ou ses sorties pour entraîner ou améliorer d'autres modèles de fondation (hors ajustement de Grok lui-même). Licence révocable."
+    },
+    "openrail++": {
+      "nom": "CreativeML Open RAIL++-M License",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md",
+      "conditions": "Usage commercial permis sous réserve des restrictions d'usage de l'annexe A, à transmettre à tout utilisateur et redistributeur."
+    },
+    "stability-community": {
+      "nom": "Stability AI Community License",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/LICENSE.md",
+      "conditions": "Gratuit pour la recherche, l'usage non commercial et l'usage commercial sous un seuil de chiffre d'affaires annuel ; au-delà, licence Entreprise. Montant exact du seuil : à vérifier (texte accessible seulement après acceptation sur Hugging Face)."
+    },
+    "flux-dev-nc": {
+      "nom": "FLUX.1 [dev] Non-Commercial License",
+      "spdx": null,
+      "categorie": "recherche",
+      "lien": "https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md",
+      "conditions": "Usage non commercial uniquement ; les sorties peuvent être utilisées selon les termes du texte (à relire)."
+    },
+    "piper-voix": {
+      "nom": "Licence propre à chaque voix",
+      "spdx": null,
+      "categorie": "conditions",
+      "lien": "https://huggingface.co/rhasspy/piper-voices",
+      "conditions": "Le dépôt des voix est sous MIT, mais chaque voix hérite de la licence de son jeu de données (fichier MODEL_CARD). Voix françaises relevées : siwis CC-BY 4.0, upmc CC-BY-SA 4.0, gilles CC0, tom AGPLv3 (contaminante : à éviter dans un service). Le moteur actif (OHF-Voice/piper1-gpl) est sous GPL-3.0 ; l'ancien rhasspy/piper (MIT) est archivé."
+    }
+  },
+  "modeles": [
+    {
+      "id": "mistral-7b-instruct-v0.3",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "parametres_milliards": 7.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant généraliste léger, poste de travail.",
+      "servir": {
+        "ollama": "ollama run mistral:7b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mistral-7B-Instruct-v0.3 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "mistral-nemo-instruct-2407",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "parametres_milliards": 12.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant multilingue (bon français), contexte long.",
+      "servir": {
+        "ollama": "ollama run mistral-nemo:12b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mistral-Nemo-Instruct-2407 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "ministral-3-3b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "parametres_milliards": 3.8,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Très petit modèle : mobile, embarqué, tri de requêtes.",
+      "servir": {
+        "ollama": "ollama run ministral-3:3b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Ministral-3-3B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "ministral-3-8b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "parametres_milliards": 8.9,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant local rapide, bon rapport qualité/coût.",
+      "servir": {
+        "ollama": "ollama run ministral-3:8b",
+        "llama_cpp": "llama-server -hf mistralai/Ministral-3-8B-Instruct-2512-GGUF:Q4_K_M",
+        "vllm": "vllm serve mistralai/Ministral-3-8B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "ministral-3-14b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "parametres_milliards": 13.9,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant généraliste sur une carte graphique grand public.",
+      "servir": {
+        "ollama": "ollama run ministral-3:14b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Ministral-3-14B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "mistral-small-3.2-24b-instruct-2506",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "parametres_milliards": 24.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant de production polyvalent, vision, appels d'outils.",
+      "servir": {
+        "ollama": "ollama run mistral-small3.2:24b",
+        "llama_cpp": "llama-server -hf unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M",
+        "vllm": "vllm serve mistralai/Mistral-Small-3.2-24B-Instruct-2506 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      },
+      "note": "GGUF cité : conversion communautaire (unsloth), pas l'éditeur."
+    },
+    {
+      "id": "magistral-small-2509",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Magistral-Small-2509",
+      "parametres_milliards": 24.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement pas à pas.",
+      "servir": {
+        "ollama": "ollama run magistral:24b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Magistral-Small-2509 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "devstral-small-2-24b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "parametres_milliards": 24.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Agent de développement logiciel.",
+      "servir": {
+        "ollama": "ollama run devstral:24b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Devstral-Small-2-24B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      },
+      "note": "Le tag Ollama « devstral:24b » peut pointer vers une autre version de Devstral Small : vérifier la page du tag."
+    },
+    {
+      "id": "mixtral-8x7b-instruct-v0.1",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "parametres_milliards": 46.7,
+      "parametres_actifs_milliards": 12.9,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Mélange d'experts historique ; remplacé par Mistral Small 3.x.",
+      "servir": {
+        "ollama": "ollama run mixtral:8x7b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mixtral-8x7B-Instruct-v0.1 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "mixtral-8x22b-instruct-v0.1",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
+      "parametres_milliards": 140.6,
+      "parametres_actifs_milliards": 39,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Grand mélange d'experts, serveur multi-GPU.",
+      "servir": {
+        "ollama": "ollama run mixtral:8x22b",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mixtral-8x22B-Instruct-v0.1 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "pixtral-12b-2409",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "parametres_milliards": 12.4,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Compréhension d'images et de documents.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Pixtral-12B-2409 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      },
+      "note": "Taille indiquée par l'éditeur (12B + encodeur de vision) ; poids au format natif Mistral."
+    },
+    {
+      "id": "mamba-codestral-7b-v0.1",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mamba-Codestral-7B-v0.1",
+      "parametres_milliards": 7.3,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Complétion de code (architecture Mamba).",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Architecture Mamba2 : prise en charge vLLM / llama.cpp à vérifier selon la version."
+    },
+    {
+      "id": "voxtral-mini-3b-2507",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+      "parametres_milliards": 4.7,
+      "parametres_actifs_milliards": null,
+      "modalites": "audio, texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Transcription et compréhension audio.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Voxtral-Mini-3B-2507 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "mistral-large-3-675b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "parametres_milliards": 675,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Très grand modèle de pointe, grappe de GPU.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mistral-Large-3-675B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      },
+      "note": "Taille déduite du nom (675B) ; nombre de paramètres actifs : à vérifier sur la fiche."
+    },
+    {
+      "id": "mistral-large-4-1t-a52b",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "parametres_milliards": 1000,
+      "parametres_actifs_milliards": 52,
+      "modalites": "texte, image",
+      "licence": "mistral-ecosystem",
+      "lien_licence": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle de pointe ; licence restrictive pour un service hébergé.",
+      "servir": {
+        "ollama": "ollama run mistral-large-4",
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mistral-Large-4-1T-A52B --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      },
+      "note": "Taille déduite du nom (1T, 52B actifs)."
+    },
+    {
+      "id": "devstral-2-123b-instruct-2512",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "parametres_milliards": 125.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mistral-modified-mit",
+      "lien_licence": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Agent de code ; réservé aux entreprises sous 20 M$ de CA mensuel.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Devstral-2-123B-Instruct-2512 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "mistral-large-instruct-2411",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411",
+      "parametres_milliards": 122.6,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mrl",
+      "lien_licence": "https://mistral.ai/licenses/MRL-0.1.md",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Recherche uniquement.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Mistral-Large-Instruct-2411 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "ministral-8b-instruct-2410",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "parametres_milliards": 8.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mrl",
+      "lien_licence": "https://mistral.ai/licenses/MRL-0.1.md",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Recherche uniquement (remplacé par Ministral 3, Apache 2.0).",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Ministral-8B-Instruct-2410 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "codestral-22b-v0.1",
+      "famille": "Mistral",
+      "editeur": "Mistral AI",
+      "depot_officiel": "https://huggingface.co/mistralai/Codestral-22B-v0.1",
+      "parametres_milliards": 22.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mnpl",
+      "lien_licence": "https://mistral.ai/licences/MNPL-0.1.md",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Code, hors production uniquement.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve mistralai/Codestral-22B-v0.1 --tokenizer-mode mistral --config-format mistral --load-format mistral"
+      }
+    },
+    {
+      "id": "llama-3.1-8b-instruct",
+      "famille": "Llama",
+      "editeur": "Meta",
+      "depot_officiel": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "parametres_milliards": 8.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "llama3.1",
+      "lien_licence": "https://www.llama.com/llama3_1/license/",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant généraliste léger.",
+      "servir": {
+        "ollama": "ollama run llama3.1:8b",
+        "llama_cpp": null,
+        "vllm": "vllm serve meta-llama/Llama-3.1-8B-Instruct"
+      }
+    },
+    {
+      "id": "llama-3.2-3b-instruct",
+      "famille": "Llama",
+      "editeur": "Meta",
+      "depot_officiel": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+      "parametres_milliards": 3.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "llama3.2",
+      "lien_licence": "https://www.llama.com/llama3_2/license/",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Petit modèle texte (non concerné par la restriction UE multimodale).",
+      "servir": {
+        "ollama": "ollama run llama3.2:3b",
+        "llama_cpp": null,
+        "vllm": "vllm serve meta-llama/Llama-3.2-3B-Instruct"
+      }
+    },
+    {
+      "id": "llama-3.3-70b-instruct",
+      "famille": "Llama",
+      "editeur": "Meta",
+      "depot_officiel": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "parametres_milliards": 70.6,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "llama3.3",
+      "lien_licence": "https://www.llama.com/llama3_3/license/",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant de haut niveau sur 1 à 2 GPU de 80 Go.",
+      "servir": {
+        "ollama": "ollama run llama3.3:70b",
+        "llama_cpp": null,
+        "vllm": "vllm serve meta-llama/Llama-3.3-70B-Instruct"
+      }
+    },
+    {
+      "id": "llama-4-scout-17b-16e-instruct",
+      "famille": "Llama",
+      "editeur": "Meta",
+      "depot_officiel": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "parametres_milliards": 108.6,
+      "parametres_actifs_milliards": 17,
+      "modalites": "texte, image",
+      "licence": "llama4",
+      "lien_licence": "https://www.llama.com/llama4/license/",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Non utilisable par une entreprise établie dans l'UE (voir licence).",
+      "servir": {
+        "ollama": "ollama run llama4:scout",
+        "llama_cpp": null,
+        "vllm": "vllm serve meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    },
+    {
+      "id": "grok-1",
+      "famille": "Grok",
+      "editeur": "xAI",
+      "depot_officiel": "https://huggingface.co/xai-org/grok-1",
+      "parametres_milliards": 314,
+      "parametres_actifs_milliards": 86,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Intérêt surtout historique et de recherche ; très lourd, non ajusté pour le dialogue.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "314B paramètres (86B actifs environ) selon l'annonce de xAI ; code de référence JAX : github.com/xai-org/grok-1. Tailles : à vérifier sur la source xAI."
+    },
+    {
+      "id": "grok-2",
+      "famille": "Grok",
+      "editeur": "xAI",
+      "depot_officiel": "https://huggingface.co/xai-org/grok-2",
+      "parametres_milliards": null,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "grok-2",
+      "lien_licence": "https://huggingface.co/xai-org/grok-2/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Recherche ; service commercial sous conditions strictes de xAI.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Poids d'environ 500 Go, 8 GPU de plus de 40 Go recommandés par xAI (SGLang). Nombre de paramètres non publié sur la fiche : à vérifier."
+    },
+    {
+      "id": "qwen3-4b-instruct-2507",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "parametres_milliards": 4.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Petit assistant multilingue, poste ou mobile haut de gamme.",
+      "servir": {
+        "ollama": "ollama run qwen3:4b",
+        "llama_cpp": "llama-server -hf Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        "vllm": "vllm serve Qwen/Qwen3-4B-Instruct-2507"
+      },
+      "note": "Le GGUF officiel cité correspond à Qwen3-4B (version initiale), pas à la révision 2507."
+    },
+    {
+      "id": "qwen3-8b",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3-8B",
+      "parametres_milliards": 8.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant local, mode réflexion activable.",
+      "servir": {
+        "ollama": "ollama run qwen3:8b",
+        "llama_cpp": "llama-server -hf Qwen/Qwen3-8B-GGUF:Q4_K_M",
+        "vllm": "vllm serve Qwen/Qwen3-8B"
+      }
+    },
+    {
+      "id": "qwen3-30b-a3b-instruct-2507",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "parametres_milliards": 30.5,
+      "parametres_actifs_milliards": 3.3,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Mélange d'experts rapide (3B actifs) : très bon débit.",
+      "servir": {
+        "ollama": "ollama run qwen3:30b",
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen3-30B-A3B-Instruct-2507"
+      }
+    },
+    {
+      "id": "qwen3-32b",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3-32B",
+      "parametres_milliards": 32.8,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant dense de qualité sur un GPU de 48 à 80 Go.",
+      "servir": {
+        "ollama": "ollama run qwen3:32b",
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen3-32B"
+      }
+    },
+    {
+      "id": "qwen3-235b-a22b-instruct-2507",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "parametres_milliards": 235.1,
+      "parametres_actifs_milliards": 22,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle de pointe, serveur multi-GPU.",
+      "servir": {
+        "ollama": "ollama run qwen3:235b",
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen3-235B-A22B-Instruct-2507"
+      }
+    },
+    {
+      "id": "qwen3.8-27b",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "parametres_milliards": 27.8,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Dernière génération Qwen dense, vision.",
+      "servir": {
+        "ollama": "ollama run qwen3.8:27b",
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen3.8-27B"
+      }
+    },
+    {
+      "id": "qwen3.8-flash-next",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "parametres_milliards": 180.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "qwen-community-1.0",
+      "lien_licence": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Grand modèle ; licence restrictive pour un service hébergé.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen3.8-Flash-Next"
+      }
+    },
+    {
+      "id": "qwen2.5-72b-instruct",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+      "parametres_milliards": 72.7,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "qwen",
+      "lien_licence": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Génération précédente ; préférer Qwen3 (Apache 2.0).",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen2.5-72B-Instruct"
+      }
+    },
+    {
+      "id": "qwen2.5-3b-instruct",
+      "famille": "Qwen",
+      "editeur": "Alibaba Cloud (Qwen)",
+      "depot_officiel": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "parametres_milliards": 3.1,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "qwen-research",
+      "lien_licence": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Recherche uniquement.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve Qwen/Qwen2.5-3B-Instruct"
+      }
+    },
+    {
+      "id": "gemma-4-e4b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-4-E4B-it",
+      "parametres_milliards": 8.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "gemma-4-apache",
+      "lien_licence": "https://ai.google.dev/gemma/apache_2",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle embarqué (poste, mobile), multimodal.",
+      "servir": {
+        "ollama": "ollama run gemma4:e4b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-4-E4B-it"
+      }
+    },
+    {
+      "id": "gemma-4-12b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-4-12B-it",
+      "parametres_milliards": 12.0,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "gemma-4-apache",
+      "lien_licence": "https://ai.google.dev/gemma/apache_2",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant généraliste sur GPU grand public.",
+      "servir": {
+        "ollama": "ollama run gemma4:12b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-4-12B-it"
+      }
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "parametres_milliards": 25.8,
+      "parametres_actifs_milliards": 4,
+      "modalites": "texte, image",
+      "licence": "gemma-4-apache",
+      "lien_licence": "https://ai.google.dev/gemma/apache_2",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Mélange d'experts rapide (4B actifs).",
+      "servir": {
+        "ollama": "ollama run gemma4:26b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-4-26B-A4B-it"
+      }
+    },
+    {
+      "id": "gemma-4-31b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-4-31B-it",
+      "parametres_milliards": 31.3,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "gemma-4-apache",
+      "lien_licence": "https://ai.google.dev/gemma/apache_2",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Assistant dense de qualité.",
+      "servir": {
+        "ollama": "ollama run gemma4:31b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-4-31B-it"
+      }
+    },
+    {
+      "id": "gemma-3-4b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-3-4b-it",
+      "parametres_milliards": 4.3,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "gemma",
+      "lien_licence": "https://ai.google.dev/gemma/terms",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Génération précédente (conditions Gemma).",
+      "servir": {
+        "ollama": "ollama run gemma3:4b",
+        "llama_cpp": "llama-server -hf ggml-org/gemma-3-4b-it-GGUF:Q4_K_M",
+        "vllm": "vllm serve google/gemma-3-4b-it"
+      }
+    },
+    {
+      "id": "gemma-3-27b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-3-27b-it",
+      "parametres_milliards": 27.4,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "gemma",
+      "lien_licence": "https://ai.google.dev/gemma/terms",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Génération précédente (conditions Gemma).",
+      "servir": {
+        "ollama": "ollama run gemma3:27b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-3-27b-it"
+      }
+    },
+    {
+      "id": "gemma-3n-e4b-it",
+      "famille": "Gemma",
+      "editeur": "Google",
+      "depot_officiel": "https://huggingface.co/google/gemma-3n-E4B-it",
+      "parametres_milliards": 7.8,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image, audio",
+      "licence": "gemma",
+      "lien_licence": "https://ai.google.dev/gemma/terms",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Mobile et embarqué (conditions Gemma).",
+      "servir": {
+        "ollama": "ollama run gemma3n:e4b",
+        "llama_cpp": null,
+        "vllm": "vllm serve google/gemma-3n-E4B-it"
+      }
+    },
+    {
+      "id": "deepseek-r1-distill-qwen-7b",
+      "famille": "DeepSeek",
+      "editeur": "DeepSeek",
+      "depot_officiel": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "parametres_milliards": 7.6,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement sur poste de travail.",
+      "servir": {
+        "ollama": "ollama run deepseek-r1:7b",
+        "llama_cpp": null,
+        "vllm": "vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      },
+      "note": "Distillé sur une base Qwen2.5 : licence de la base (Apache 2.0 annoncée par DeepSeek) à vérifier."
+    },
+    {
+      "id": "deepseek-r1",
+      "famille": "DeepSeek",
+      "editeur": "DeepSeek",
+      "depot_officiel": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "parametres_milliards": 684.5,
+      "parametres_actifs_milliards": 37,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement de pointe, grappe de GPU.",
+      "servir": {
+        "ollama": "ollama run deepseek-r1:671b",
+        "llama_cpp": null,
+        "vllm": "vllm serve deepseek-ai/DeepSeek-R1"
+      }
+    },
+    {
+      "id": "deepseek-v3.2",
+      "famille": "DeepSeek",
+      "editeur": "DeepSeek",
+      "depot_officiel": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "parametres_milliards": 685.4,
+      "parametres_actifs_milliards": 37,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Grand modèle généraliste, grappe de GPU.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve deepseek-ai/DeepSeek-V3.2"
+      }
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "famille": "DeepSeek",
+      "editeur": "DeepSeek",
+      "depot_officiel": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "parametres_milliards": 763.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte, image",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Dernière génération, grappe de GPU.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve deepseek-ai/DeepSeek-V4.1-Flash"
+      },
+      "note": "Paramètres actifs : à vérifier sur la fiche."
+    },
+    {
+      "id": "phi-4-mini-instruct",
+      "famille": "Phi",
+      "editeur": "Microsoft",
+      "depot_officiel": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "parametres_milliards": 3.8,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Petit modèle pour poste et mobile.",
+      "servir": {
+        "ollama": "ollama run phi4-mini:3.8b",
+        "llama_cpp": null,
+        "vllm": "vllm serve microsoft/Phi-4-mini-instruct"
+      }
+    },
+    {
+      "id": "phi-4",
+      "famille": "Phi",
+      "editeur": "Microsoft",
+      "depot_officiel": "https://huggingface.co/microsoft/phi-4",
+      "parametres_milliards": 14.7,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/microsoft/phi-4/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement compact, surtout en anglais.",
+      "servir": {
+        "ollama": "ollama run phi4:14b",
+        "llama_cpp": null,
+        "vllm": "vllm serve microsoft/phi-4"
+      }
+    },
+    {
+      "id": "phi-4-reasoning",
+      "famille": "Phi",
+      "editeur": "Microsoft",
+      "depot_officiel": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "parametres_milliards": 14.7,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/microsoft/Phi-4-reasoning/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement mathématique et scientifique.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": "vllm serve microsoft/Phi-4-reasoning"
+      }
+    },
+    {
+      "id": "olmo-2-1124-7b-instruct",
+      "famille": "OLMo",
+      "editeur": "Allen Institute for AI (Ai2)",
+      "depot_officiel": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+      "parametres_milliards": 7.3,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle entièrement ouvert (données et code publiés).",
+      "servir": {
+        "ollama": "ollama run olmo2:7b",
+        "llama_cpp": null,
+        "vllm": "vllm serve allenai/OLMo-2-1124-7B-Instruct"
+      }
+    },
+    {
+      "id": "olmo-2-1124-13b-instruct",
+      "famille": "OLMo",
+      "editeur": "Allen Institute for AI (Ai2)",
+      "depot_officiel": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+      "parametres_milliards": 13.7,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle entièrement ouvert.",
+      "servir": {
+        "ollama": "ollama run olmo2:13b",
+        "llama_cpp": null,
+        "vllm": "vllm serve allenai/OLMo-2-1124-13B-Instruct"
+      }
+    },
+    {
+      "id": "olmo-3-7b-instruct",
+      "famille": "OLMo",
+      "editeur": "Allen Institute for AI (Ai2)",
+      "depot_officiel": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "parametres_milliards": 7.3,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle entièrement ouvert, génération 3.",
+      "servir": {
+        "ollama": "ollama run olmo-3:7b",
+        "llama_cpp": null,
+        "vllm": "vllm serve allenai/Olmo-3-7B-Instruct"
+      }
+    },
+    {
+      "id": "olmo-3.1-32b-instruct",
+      "famille": "OLMo",
+      "editeur": "Allen Institute for AI (Ai2)",
+      "depot_officiel": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
+      "parametres_milliards": 32.2,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Modèle entièrement ouvert de qualité.",
+      "servir": {
+        "ollama": "ollama run olmo-3.1:32b",
+        "llama_cpp": null,
+        "vllm": "vllm serve allenai/Olmo-3.1-32B-Instruct"
+      }
+    },
+    {
+      "id": "gpt-oss-20b",
+      "famille": "gpt-oss",
+      "editeur": "OpenAI",
+      "depot_officiel": "https://huggingface.co/openai/gpt-oss-20b",
+      "parametres_milliards": 20.9,
+      "parametres_actifs_milliards": 3.6,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement et outils sur un GPU de 16 Go (MXFP4).",
+      "servir": {
+        "ollama": "ollama run gpt-oss:20b",
+        "llama_cpp": null,
+        "vllm": "vllm serve openai/gpt-oss-20b"
+      },
+      "note": "Paramètres actifs selon l'annonce d'OpenAI : à vérifier. Une politique d'usage accompagne le dépôt."
+    },
+    {
+      "id": "gpt-oss-120b",
+      "famille": "gpt-oss",
+      "editeur": "OpenAI",
+      "depot_officiel": "https://huggingface.co/openai/gpt-oss-120b",
+      "parametres_milliards": 116.8,
+      "parametres_actifs_milliards": 5.1,
+      "modalites": "texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Raisonnement de haut niveau sur un GPU de 80 Go.",
+      "servir": {
+        "ollama": "ollama run gpt-oss:120b",
+        "llama_cpp": null,
+        "vllm": "vllm serve openai/gpt-oss-120b"
+      },
+      "note": "Paramètres actifs selon l'annonce d'OpenAI : à vérifier."
+    },
+    {
+      "id": "whisper-large-v3",
+      "famille": "Whisper",
+      "editeur": "OpenAI",
+      "depot_officiel": "https://huggingface.co/openai/whisper-large-v3",
+      "parametres_milliards": 1.55,
+      "parametres_actifs_milliards": null,
+      "modalites": "audio → texte",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Transcription multilingue de référence.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Servir avec whisper.cpp, faster-whisper ou transformers. Le code github.com/openai/whisper est sous MIT."
+    },
+    {
+      "id": "whisper-large-v3-turbo",
+      "famille": "Whisper",
+      "editeur": "OpenAI",
+      "depot_officiel": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "parametres_milliards": 0.81,
+      "parametres_actifs_milliards": null,
+      "modalites": "audio → texte",
+      "licence": "mit",
+      "lien_licence": "https://huggingface.co/openai/whisper-large-v3-turbo/blob/main/LICENSE",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Transcription rapide, légère.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Servir avec whisper.cpp ou faster-whisper."
+    },
+    {
+      "id": "piper-voix",
+      "famille": "Piper",
+      "editeur": "Open Home Foundation (ex-Rhasspy)",
+      "depot_officiel": "https://huggingface.co/rhasspy/piper-voices",
+      "parametres_milliards": null,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte → audio",
+      "licence": "piper-voix",
+      "lien_licence": "https://huggingface.co/rhasspy/piper-voices",
+      "licence_verifiee": "vérifiée le 2026-11-11 pour le dépôt et quatre voix françaises ; autres voix à vérifier une par une",
+      "usage_conseille": "Synthèse vocale locale très légère (CPU, Raspberry Pi).",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Moteur : github.com/OHF-Voice/piper1-gpl (GPL-3.0). Chaque voix pèse 20 à 120 Mo environ (à vérifier) et tourne sur CPU."
+    },
+    {
+      "id": "flux.1-schnell",
+      "famille": "FLUX",
+      "editeur": "Black Forest Labs",
+      "depot_officiel": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+      "parametres_milliards": 11.9,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte → image",
+      "licence": "apache-2.0",
+      "lien_licence": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Génération d'images rapide (1 à 4 étapes), usage commercial permis.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Dépôt gated : acceptation des conditions sur Hugging Face. Servir avec diffusers ou ComfyUI."
+    },
+    {
+      "id": "flux.1-dev",
+      "famille": "FLUX",
+      "editeur": "Black Forest Labs",
+      "depot_officiel": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+      "parametres_milliards": 11.9,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte → image",
+      "licence": "flux-dev-nc",
+      "lien_licence": "https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Images de qualité, non commercial.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      }
+    },
+    {
+      "id": "stable-diffusion-xl-base-1.0",
+      "famille": "Stable Diffusion",
+      "editeur": "Stability AI",
+      "depot_officiel": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "parametres_milliards": 2.6,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte → image",
+      "licence": "openrail++",
+      "lien_licence": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md",
+      "licence_verifiee": "vérifiée le 2026-11-11",
+      "usage_conseille": "Génération d'images éprouvée, GPU de 8 à 12 Go.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      },
+      "note": "Taille : poids du réseau principal ; servir avec diffusers ou ComfyUI."
+    },
+    {
+      "id": "stable-diffusion-3.5-large",
+      "famille": "Stable Diffusion",
+      "editeur": "Stability AI",
+      "depot_officiel": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+      "parametres_milliards": 8.1,
+      "parametres_actifs_milliards": null,
+      "modalites": "texte → image",
+      "licence": "stability-community",
+      "lien_licence": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/LICENSE.md",
+      "licence_verifiee": "partiellement vérifiée le 2026-11-11 (type de licence lu via l'API Hugging Face ; seuil de chiffre d'affaires à vérifier)",
+      "usage_conseille": "Images de qualité ; commercial sous seuil de chiffre d'affaires.",
+      "servir": {
+        "ollama": null,
+        "llama_cpp": null,
+        "vllm": null
+      }
+    }
+  ]
+}

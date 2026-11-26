@@ -1,0 +1,34 @@
+Achille IA — catalogue des modèles ouverts et applications publiques
+Copyright 2026 Dyonysos
+
+Ce produit (scripts et documentation) est distribué sous la licence Apache 2.0 (fichier LICENSE).
+
+Aucun poids de modèle n'est distribué dans ce dépôt. Chaque modèle cité reste soumis à la licence
+de son éditeur, consultable par le lien indiqué dans modeles/CATALOGUE.md.
+
+Marques
+-------
+Les noms et marques suivants appartiennent à leurs titulaires respectifs et ne sont cités que pour
+identifier les modèles ; leur mention n'implique aucun partenariat ni aucune approbation :
+
+- Mistral, Mistral AI, Mixtral, Ministral, Magistral, Devstral, Codestral, Pixtral, Voxtral : Mistral AI
+- Llama, Meta : Meta Platforms, Inc.
+- Gemma, Google : Google LLC
+- Grok, xAI : X.AI Corp.
+- Qwen : Alibaba Cloud
+- DeepSeek : Hangzhou DeepSeek Artificial Intelligence Co., Ltd.
+- Phi, Microsoft : Microsoft Corporation
+- OLMo, Ai2 : Allen Institute for AI
+- OpenAI, Whisper, gpt-oss : OpenAI
+- FLUX, Black Forest Labs : Black Forest Labs
+- Stable Diffusion, Stability AI : Stability AI Ltd.
+- Piper : Open Home Foundation
+- Ollama : Ollama, Inc. ; llama.cpp : ggml authors ; vLLM : vLLM project ; Hugging Face : Hugging Face, Inc.
+
+Mentions requises par certaines licences de modèles (à reprendre si vous redistribuez ou servez ces modèles)
+--------------------------------------------------------------------------------------------------------
+- Llama : « Built with Llama », et copie de l'accord de licence Llama avec toute redistribution.
+- Gemma 3 : « Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms ».
+- Grok 2 : « Powered by xAI ».
+
+Modifications du 26 novembre 2026 : documentation de préparation Achille LLM, fiche du futur modèle et feuille de route ; statut de livraison explicite. Éléments repris du dépôt achille-ia de DYONYSOS.
